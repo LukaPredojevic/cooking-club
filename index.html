@@ -17,7 +17,7 @@
 
 <body>
     
-    <header id="home">
+    <header>
         <div id="navbar-container">
             <a href="index.html">
                 <h1 id="logo">Cooking Club</h1>
@@ -61,7 +61,27 @@
     </section>
 
     <section id="sign-up">
-        Sign Up
+        <div id="sign-up-left">
+            <img src="assets/images/sign_up_image.jpg" alt="a bunch of cooking ingredients on a counter">
+        </div>
+        <div id="sign-up-right">
+            <form action="POST" id="sign-up-form">
+
+                <h1>Sign up today!</h1>
+
+                <label for="firstname">First Name</label>
+                <input id="firstname" name="first_name" type="text" required>
+
+                <label for="lastname">Last Name</label>
+                <input id="lastname" name="last_name" type="text" required>
+
+                <label for="email">Email Address</label>
+                <input id="email" name="email" type="email_address" required>
+
+                <input class="submit-button" type="submit" value="Start Cooking!">
+
+            </form>
+        </div>
     </section>
 
     <footer>
