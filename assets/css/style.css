@@ -5,12 +5,11 @@
     --background-color: #FFE4D6;
     --header-color: #141316;
     --text-color: #5B5661;
+    --navbar-color: #FFC9AD;
     --akcent-color: #FF925C;
 
-    --navbar-color: #FFC9AD;
-    --navbar-height: 6vh;
 
-    --header-font: 'Montserrat Alternates', sans-serif;
+    --navbar-height: 6vh;
 
 }
 
@@ -45,7 +44,7 @@ body {
 /* headings */
 
 h1, h2 {
-    font-family: var(--header-font)
+    font-family: 'Montserrat Alternates', sans-serif;
     text-transform: uppercase;
     color: var(--header-color);
 }
@@ -289,4 +288,22 @@ h1, h2 {
 footer {
     height: 10vh;
     background-color: var(--navbar-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#footer-social-media a {
+    text-decoration: underline;
+    color: var(--text-color);
+    margin: 4vw;
+}
+
+#footer-contact {
+    margin-top: 1vh;
+}
+
+#footer-contact a {
+    color: var(--text-color)
 }
