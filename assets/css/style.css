@@ -28,6 +28,9 @@ body {
 #logo {
     float: left;
     font-size: 250%;
+    margin-left: 20px;
+    letter-spacing: 2px;
+    color: var(--header-color);
     line-height: var(--navbar-height);
 }
 
