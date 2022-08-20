@@ -9,6 +9,9 @@
 
     --navbar-color: #FFC9AD;
     --navbar-height: 6vh;
+
+    --header-font: 'Montserrat Alternates', sans-serif;
+
 }
 
 * {
@@ -42,7 +45,7 @@ body {
 /* headings */
 
 h1, h2 {
-    font-family: 'Montserrat Alternates', sans-serif;
+    font-family: var(--header-font)
     text-transform: uppercase;
     color: var(--header-color);
 }
@@ -229,18 +232,29 @@ h1, h2 {
     padding: 0 .3rem;
 	margin: 0 -.3rem;
     margin-bottom: 2vh;
+    opacity: 0.8;
+    font-family:  'Nunito', sans-serif;
     box-shadow: inset 100vw 0 0 0 var(--background-color);
 }
 
 .location a {
-    font-family:  'Montserrat Alternates', sans-serif;
+    font-family:  'Nunito', sans-serif;
     text-decoration: none;
     text-align: center;
     font-size: 150%;
     padding: 0 .3rem;
 	margin: 0 -.3rem;
+    opacity: 0.95;
     color: var(--header-color);
     box-shadow: inset 100vw 0 0 0 var(--akcent-color);
+    transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+}
+
+.location a:hover {
+    padding: 0 .3rem;
+	margin: 0 -.3rem;
+    color: var(--akcent-color);
+    box-shadow: inset 100vw 0 0 0 var(--header-color);
 }
 
 #location-reumanplatz {
