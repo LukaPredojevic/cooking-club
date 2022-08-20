@@ -105,3 +105,32 @@ h1, h2 {
     align-items: center;
     justify-content: center;
 }
+
+/* about us */
+
+#about-us {
+    height: 75vh;
+}
+
+#about-left {
+    height: 55vh;
+    width: 30%;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+    margin-left: 10%;
+    margin-right: 10%;
+    float: left;
+    text-align: center;
+    font-size: larger;
+}
+
+#about-right {
+    overflow: hidden;
+    height: 100%;
+    width: 50%;
+    float: right;
+}
+
+#about-right img {
+    margin: 10%;
+}
