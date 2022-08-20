@@ -119,33 +119,29 @@ h1, h2 {
 
 #about-us {
     height: 75vh;
+    grid-template-areas: "left right";
+    grid-template-rows: 100% 100%;
+    grid-template-columns: 50% 50%;
+    display: grid;
 }
 
 #about-left {
-    height: 50vh;
-    width: 30%;
     margin-top: 10vh;
-    margin-bottom: 10vh;
     margin-left: 10%;
     margin-right: 10%;
-    float: left;
     text-align: center;
     font-size: larger;
+    grid-area: left;
 }
 
 #about-right {
     overflow: hidden;
-    height: 100%;
-    width: 50%;
-    float: right;
+    grid-area: right;
+    object-fit: cover;
 }
 
 #about-left h1 {
     margin-bottom: 5vh;
-}
-
-#about-right img {
-    margin: 10%;
 }
 
 /* sign up */
@@ -196,4 +192,11 @@ h1, h2 {
     margin-left: 10%;
     margin-top: 10%;
     background-color: #FF925C;
+}
+
+/* footer */
+
+footer {
+    height: 10vh;
+    background-color: var(--navbar-color);
 }
