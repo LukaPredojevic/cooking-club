@@ -5,6 +5,7 @@
     --background-color: #FFE4D6;
     --header-color: #141316;
     --text-color: #5B5661;
+    --akcent-color: #FF925C;
 
     --navbar-color: #FFC9AD;
     --navbar-height: 6vh;
@@ -118,7 +119,7 @@ h1, h2 {
 /* about us */
 
 #about-us {
-    height: 75vh;
+    height: 95vh;
     grid-template-areas: 
     "text image";
     grid-template-rows: 100% 100%;
@@ -127,9 +128,13 @@ h1, h2 {
 }
 
 #about-text {
-    margin-top: 10vh;
+    margin-top: -20%;
     margin-left: 10%;
     margin-right: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     text-align: center;
     font-size: larger;
     grid-area: text;
@@ -137,6 +142,7 @@ h1, h2 {
 
 #about-image {
     margin-top: 5vh;
+    margin-bottom: 5vh;
     overflow: hidden;
     display: flex;
     justify-content: center;
@@ -144,14 +150,14 @@ h1, h2 {
     grid-area: image;
 }
 
-#about-left h1 {
-    margin-bottom: 5vh;
+#about-text div {
+    margin-top: 5vh;
 }
 
 /* sign up */
 
 #sign-up {
-    height: 75vh;
+    height: 95vh;
     grid-template-areas: 
     "image form";
     grid-template-rows: 100% 100%;
@@ -166,6 +172,7 @@ h1, h2 {
     justify-content: center;
     align-items: center;
     margin-bottom: 5vh;
+    margin-top: 5vh;
 }
 
 #sign-up-form {
@@ -195,34 +202,72 @@ h1, h2 {
     font-family:  'Montserrat Alternates', sans-serif;
     margin-left: 10%;
     margin-top: 10%;
-    background-color: #FF925C;
+    background-color: var(--akcent-color);
 }
 
 /* locations */
 
 #locations {
-    height: 90vh;
+    height: 100vh;
     grid-template-areas: 
-    "locaton-reuman locaton-land locaton-donau";
+    "locationreuman locationland locationdonau";
     grid-template-rows: 100% 100% 100%;
     grid-template-columns: 1fr 1fr 1fr;
     display: grid;
 }
 
 .location {
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
 
+.location h1 {
+    font-size: 200%;
+    padding: 0 .3rem;
+	margin: 0 -.3rem;
+    margin-bottom: 2vh;
+    box-shadow: inset 100vw 0 0 0 var(--background-color);
+}
+
+.location a {
+    font-family:  'Montserrat Alternates', sans-serif;
+    text-decoration: none;
+    text-align: center;
+    font-size: 150%;
+    padding: 0 .3rem;
+	margin: 0 -.3rem;
+    color: var(--header-color);
+    box-shadow: inset 100vw 0 0 0 var(--akcent-color);
 }
 
 #location-reumanplatz {
-    grid-area: locaton-reuman;
+    grid-area: locationreuman;
+
+    background-image: url("../images/reumanplatz.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 #location-landstraße {
-    grid-area: locaton-land;
+    grid-area: locationland;
+
+    background-image: url("../images/landstraße.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 #location-donauinsel {
-    grid-area: locaton-donau;
+    grid-area: locationdonau;
+
+    background-image: url("../images/donauinsel.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 /* footer */
