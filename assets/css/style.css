@@ -119,28 +119,29 @@ h1, h2 {
 
 #about-us {
     height: 75vh;
-    grid-template-areas: "aboutleft aboutright";
+    grid-template-areas: 
+    "text image";
     grid-template-rows: 100% 100%;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 1fr 1fr;
     display: grid;
 }
 
-#about-left {
+#about-text {
     margin-top: 10vh;
     margin-left: 10%;
     margin-right: 10%;
     text-align: center;
     font-size: larger;
-    grid-area: aboutleft;
+    grid-area: text;
 }
 
-#about-right {
+#about-image {
+    margin-top: 5vh;
     overflow: hidden;
-    grid-area: aboutright;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 5vh;
+    grid-area: image;
 }
 
 #about-left h1 {
@@ -151,28 +152,29 @@ h1, h2 {
 
 #sign-up {
     height: 75vh;
-    grid-template-areas: "signupleft signupright ";
+    grid-template-areas: 
+    "image form";
     grid-template-rows: 100% 100%;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 1fr 1fr;
     display: grid;
 }
 
-#sign-up-left {
+#sign-up-image {
     overflow: hidden;
-    grid-area: signupleft;
+    grid-area: image;
     display: flex;
     justify-content: center;
     align-items: center;
     margin-bottom: 5vh;
 }
 
-#sign-up-right {
+#sign-up-form {
     margin-top: 10vh;
-    margin-left: 10%;
-    margin-right: 10%;
+    margin-left: 20%;
+    margin-right: 20%;
     text-align: center;
     font-size: larger;
-    grid-area: signupright;
+    grid-area: form;
 }
 
 #sign-up-form h1 {
@@ -194,6 +196,33 @@ h1, h2 {
     margin-left: 10%;
     margin-top: 10%;
     background-color: #FF925C;
+}
+
+/* locations */
+
+#locations {
+    height: 90vh;
+    grid-template-areas: 
+    "locaton-reuman locaton-land locaton-donau";
+    grid-template-rows: 100% 100% 100%;
+    grid-template-columns: 1fr 1fr 1fr;
+    display: grid;
+}
+
+.location {
+
+}
+
+#location-reumanplatz {
+    grid-area: locaton-reuman;
+}
+
+#location-landstraße {
+    grid-area: locaton-land;
+}
+
+#location-donauinsel {
+    grid-area: locaton-donau;
 }
 
 /* footer */
