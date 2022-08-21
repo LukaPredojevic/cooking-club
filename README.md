@@ -71,9 +71,9 @@ Cooking Club is a website that tries to remove the fear out of cooking that many
 ## Validator Testing 
 
 - HTML
-  - No errors were returned when passing through the official [W3C validator]()
+  - No errors were returned when passing through the official [W3C validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Flukapredojevic.github.io%2Fcooking-club%2Findex.html)
 - CSS
-  - No errors were found when passing through the official [(Jigsaw) validator]()
+  - No errors were found when passing through the official [(Jigsaw) validator](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Flukapredojevic.github.io%2Fcooking-club%2Findex.html&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=de)
 - Accessibility
  - I confirmed that the colors and fonts chosen are easy to read and accessible by running it through lighthouse in devtools.
 
